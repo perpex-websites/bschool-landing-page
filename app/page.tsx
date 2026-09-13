@@ -244,7 +244,7 @@ export default function Home() {
       <section className="section intro" id="why">
         <div className="section-label">01 — START WHERE YOU ARE</div>
         <div className="split">
-          <h2>Business learning<br /><span>should fit the person.</span></h2>
+          <h2><span style={{ color: "var(--blue)" }}>Business learning</span><br /><span>should fit the person.</span></h2>
           <div><p>Not everyone needs the same depth, format or pace. Your starting point matters.</p><p>PerpeX is designed to meet you where you are — then give you a structured path to move forward.</p></div>
         </div>
         <div className="identity-grid">
