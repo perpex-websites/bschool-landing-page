@@ -1,23 +1,29 @@
-# PerpeX Practical B-School Landing Page
+# BYOB Interactive Landing Page
 
-Premium white + blue Next.js landing page with:
-- Conversion-focused ad landing structure
-- Progressive one-question-at-a-time assessment
-- Lead capture
-- Multi-factor recommendation engine
-- Three program paths: GrowthX, Online + Hybrid, Cohort B-School
-- Responsive mobile UI
-- Mentors, curriculum, social proof and FAQ sections
+Next.js + Tailwind CSS implementation of the BYOB interactive ad landing-page flow.
 
 ## Run
 
+```bash
 npm install
 npm run dev
+```
 
 Open http://localhost:3000
 
-## Important
+## Replace before production
 
-The mentor information, testimonials, metrics and program specifics are intentionally placeholders where verified PerpeX data was not supplied. Replace those before launch.
+1. Replace the placeholder alumni/video blocks with real vertical videos.
+2. Set the real WhatsApp number in `components/InteractiveExperience.tsx`.
+3. Connect the Apply CTA to the real application URL/form.
+4. Replace `console.info` analytics in `lib/analytics.ts` with GA4/Meta Pixel/PostHog/etc.
+5. Add real alumni names, roles and Instagram links.
 
-The recommendation engine is client-side demo logic. For production, move lead storage, scoring rules and CRM integration to a secure server/API.
+## Recommendation
+
+The recommendation currently uses:
+- current stage
+- weekly time
+- main challenge
+
+as specified in the supplied BYOB brief.
